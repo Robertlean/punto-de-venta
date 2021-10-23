@@ -31,28 +31,29 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <header class="d-flex justify-content-center align-items-center">
-      <ul class="nav nav-tabs">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./index.html">Lista Vendedores</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="listProducts.html" id="listProducts">Lista productos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Hacer remito</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Historial</a>
-          </li>
-          <li>
-              <form class="d-flex" action="/search">
-                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"/>
-                  <button class="btn btn-outline-success" type="submit">Buscar</button>
-              </form>
-          </li>
-        </ul>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/">Lista Vendedores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/">Lista productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hacer remito</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Historial</a>
+            </li>
+            <li>
+                <form class="d-flex" action="/search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"/>
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </li>
+          </ul>
     </header>
-    <div id="index"></div>
+    <div id="listProducts"></div>
+    
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import listProductos from './listProducts';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <listProductos />
   </React.StrictMode>,
-  document.getElementById('index'),
+  document.getElementById('listProducts'),
 );
 
 
