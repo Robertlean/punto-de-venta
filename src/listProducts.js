@@ -1,11 +1,9 @@
 import './App.css';
 
-function listProducts() {
+export default function listProducts() {
   return (
     <div className="App">
-      Holaa
+      lista productos
     </div>
   );
 }
-
-export default listProducts;
