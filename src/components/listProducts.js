@@ -1,14 +1,15 @@
 import react from "react";
 
-export default function Header(){
+export default function listProducts(){
     return(
+        <div>
         <header className="d-flex justify-content-center align-items-center">
             <ul className="nav nav-tabs">
                 <li className="nav-item">
                     <a className="nav-link" aria-current="page" href="./index.html">Lista Vendedores</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="listProducts.html" id="listProducts">Lista productos</a>
+                    <a className="nav-link active" href="listProducts.html" id="listProducts">Lista productos</a>
                 </li>
                 <li className="nav-item">
                     <a className="nav-link" href="#">Hacer remito</a>
@@ -24,5 +25,8 @@ export default function Header(){
                 </li>
             </ul>
         </header>
+        <div>algo en lista</div>
+        </div>
+        
     )
 }

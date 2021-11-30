@@ -1,11 +1,52 @@
 import './App.css';
-import Header from './components/Header'
+import {useState} from "react"
 
+let valor = 0
 function App() {
+
+  function vendedores(){
+    let valor = "Vendedores";
+    valorString(valor);
+
+  }
+  function productos(){
+    
+    valorString(valor)
+    valor = valor + 2;
+  }
+
+  const [dato, valorString] = useState();
   return (
-    <div className="App">
-      <Header/>
-    </div>
+      <div className="App">
+        <header className="d-flex justify-content-center align-items-center">
+            <ul className="nav nav-tabs">
+                <li className="nav-item">
+                    <button className="nav-link" aria-current="page" href="./index.html" onClick={vendedores}>Lista Vendedores</button>
+                </li>
+                <li className="nav-item">
+                    <button className="nav-link" href="listProducts.html" id="listProducts" onClick={productos}>Lista productos</button>
+                </li>
+                <li className="nav-item">
+                    <button className="nav-link" href="#">Hacer remito</button>
+                </li>
+                <li className="nav-item">
+                    <button className="nav-link" href="#">Historial</button>
+                </li>
+                <li>
+                    <form className="d-flex" action="/search">
+                        <input className="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"/>
+                        <button className="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </li>
+            </ul>
+        </header>
+       <div>
+         {dato}
+       </div>
+       
+      </div>
+
+    
     
 
     /* <div className="App">
