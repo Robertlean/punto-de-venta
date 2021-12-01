@@ -1,9 +1,12 @@
 import './App.css';
 import {useState} from "react"
+import {Header} from './components/Header'
 
 let valor = 0
 function App() {
-
+  function bienvenida(){
+    return "Bienvenido al putno de venta de El Noble"
+  }
   function vendedores(){
     let valor = "Vendedores";
     valorString(valor);
@@ -41,9 +44,11 @@ function App() {
             </ul>
         </header>
        <div>
+          {bienvenida}
          {dato}
+         
        </div>
-       
+       <Header />
       </div>
 
     
